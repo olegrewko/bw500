@@ -311,14 +311,8 @@
             </div>
           </div>
         </div>
+
         <!-- <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 text-left">
-              <h3>Cart</h3>
-            </div>
-          </div>
-        </div> -->
-        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-8">
               <h5 class="section-title"><span>Cart</span></h5>
@@ -478,7 +472,165 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+        <section class="cart">
+          <div class="container">
+            <h5 class="cart__title-main">Cart</h5>
+            <div class="cart__content">
+              <div class="cart__table">
+                <div
+                  class="cart__row cart-grid cart__row--heading cart-grid--heading"
+                >
+                  <div class="cart__col">Image</div>
+                  <div class="cart__col">Product</div>
+                  <div class="cart__col cart__col--quantity">Quantity</div>
+                  <div class="cart__col cart__col--total">Total</div>
+                  <div class="cart__col cart__col--quantity">Delete</div>
+                </div>
+                <div class="cart__row cart-grid">
+                  <div class="cart__col cart__col--image">
+                    <img
+                      src="./img/products/1.jpg"
+                      width="90"
+                      alt=""
+                      class="cart__image"
+                    />
+                  </div>
+                  <div class="cart__col cart__col--info">
+                    <div class="cart__info">
+                      <p class="cart__descr">
+                        A timeless ceramic vase with a tri color grey glaze.
+                      </p>
+                      <span class="cart__price">&pound;250</span>
+                    </div>
+                  </div>
+                  <div class="cart__col cart__col--quantity">
+                    <div class="cart__stepper">
+                      <input
+                        type="number"
+                        value="1"
+                        class="form-control cart-qty"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="cart__col cart__col--total">
+                    <span class="cart__total">&pound;500</span>
+                  </div>
+                  <div class="cart__col cart__col--quantity">
+                    <button class="btn btn-info">
+                      <img
+                        src="./img/icons/close16.png"
+                        alt="./img/icons/close16.png"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="cart__row cart-grid">
+                  <div class="cart__col cart__col--image">
+                    <img
+                      src="./img/products/1.jpg"
+                      width="90"
+                      alt=""
+                      class="cart__image"
+                    />
+                  </div>
+                  <div class="cart__col cart__col--info">
+                    <div class="cart__info">
+                      <p class="cart__descr">
+                        A timeless ceramic vase with a tri color grey glaze.
+                      </p>
+                      <span class="cart__price">&pound;250</span>
+                    </div>
+                  </div>
+                  <div class="cart__col cart__col--quantity">
+                    <div class="cart__stepper">
+                      <input
+                        type="number"
+                        value="1"
+                        class="form-control cart-qty"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="cart__col cart__col--total">
+                    <span class="cart__total">&pound;500</span>
+                  </div>
+                  <div class="cart__col cart__col--quantity">
+                    <!-- <div class="cart__stepper"> -->
+                    <button class="btn btn-info">
+                      <img
+                        src="./img/icons/close16.png"
+                        alt="./img/icons/close16.png"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__bottom">
+                <div class="cart__bottom-info">
+                  <p class="cart__text">
+                    Taxes and shipping are calculated at checkout
+                  </p>
+                  <div class="cart__subtotal">
+                    <button class="btn btn-outline-info">Update Cart</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <h5 class="section-title"><span>Cart Summary</span></h5>
+                  <div class="cart-summary p-3 side">
+                    <div class="d-flex justify-content-between my-3">
+                      <h6>Subtotal</h6>
+                      <h6>$1000</h6>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-3">
+                      <h6>Coupon</h6>
+                      <h6>-$20</h6>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between my-3 border-bottom"
+                    >
+                      <h6>Shipping</h6>
+                      <h6>$10</h6>
+                    </div>
+
+                    <button
+                      class="btn btn-link px-0 btn-coupon"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCoupon"
+                    >
+                      Have a Coupon?
+                    </button>
+
+                    <div class="input-group collapse" id="collapseCoupon">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Coupon Code"
+                      />
+                      <button class="btn btn-warning">
+                        <i class="fa-regular fa-circle-check"></i>
+                      </button>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-3">
+                      <h3>Total</h3>
+                      <h3>$990</h3>
+                    </div>
+
+                    <div class="d-grid">
+                      <a href="./checkout.html" class="btn btn-warning"
+                        >Checkout</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
