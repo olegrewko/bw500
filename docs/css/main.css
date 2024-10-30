@@ -266,6 +266,7 @@ transition: all .4s;
 
 }
 .form-control {
+    width: 100%;
     box-shadow: none;
 }
 .nav-item {

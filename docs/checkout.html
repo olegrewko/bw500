@@ -843,5 +843,55 @@
           document.getElementById("sidebar").classList.remove("open");
         });
     </script>
+    <script type="module">
+      fetch("js/countries.json")
+        .then((res) => res.json())
+        .then((json) => {
+          let html = "";
+          json["countries"].forEach((el) => {
+            html += `<option value="${el.code}">${el.name}</option>`;
+          });
+          document.getElementById("country").innerHTML = html;
+        });
+
+      const countryField = document.getElementById("country");
+      const cityField = document.getElementById("city");
+      let res = await fetch("./countries.json");
+      const data = await res.json();
+
+      function getCountries() {
+        let html = "";
+        for (country in data) {
+          html += `<option value="${country}">${country}</option>`;
+        }
+        countryField.innerHTML = html;
+      }
+
+      function getCities(country = "") {
+        let html = "";
+        if (!country) {
+          country = Object.keys(data)[0];
+        }
+        for (city of data[country]) {
+          html += `<option value="${city}">${city}</option>`;
+        }
+        cityField.innerHTML = html;
+      }
+
+      function getLoader() {
+        document.getElementById("ajaxLoader").classList.toggle("fade");
+      }
+
+      getCountries();
+      getCities();
+
+      countryField.addEventListener("change", function () {
+        getLoader();
+        setTimeout(() => {
+          getCities(this.value);
+          getLoader();
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
