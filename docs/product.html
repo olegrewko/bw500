@@ -11,7 +11,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script>
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
-    <title>b&w&bootstrap5/Cart</title>
+    <title>b&w500/Product</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -51,41 +51,22 @@
               </div>
             </form>
           </div>
-          <div class="col-6 col-sm-3">
-            <div class="d-flex justify-content-end">
-              <div class="btn-group me-1 z-one">
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Account
-                  </button>
-                  <ul class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Sign in</a>
-                    <a href="#" class="dropdown-item">Sign up</a>
-                  </ul>
-                </div>
-              </div>
-              <div class="btn-group me-1 z-one">
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    EN
-                  </button>
-                  <ul class="dropdown-menu">
-                    <a href="#" class="dropdown-item">RU</a>
-                    <a href="#" class="dropdown-item">DE</a>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
+          <div class="col-6 col-sm-3 z-one">
+            <ul class="ul-user">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                  <img class="user" src="./img/icons/user.png" alt="" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#" class="dropdown-item">Регистрация</a></li>
+                  <li><a href="#" class="dropdown-item">Авторизация</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Личный кабинет</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -406,7 +387,7 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col-12">
+          <div class="col-12 container">
             <div class="product-content-details bg-white p-4">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
