@@ -109,6 +109,9 @@
 .z-two {
     z-index: 20000;
 }
+.mt-100 {
+    margin-top: 100px;
+}
 html, body {
     height: 100%;
 }
@@ -342,7 +345,7 @@ background: tomato;
  margin: 5px;
  padding: 5px;
  margin: 0 auto;
- 
+ margin-bottom: 100px;
  display: flex;
  justify-content: center;
  align-items: flex-start;
@@ -1337,6 +1340,9 @@ label.required::before {
 }
 .cart:hover {
     color: darkslategray;
+}
+.section-title {
+    margin-top: 0px;
 }
 .minicart:hover {
     color: orange;
