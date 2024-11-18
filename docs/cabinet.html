@@ -11,7 +11,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script>
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
-    <title>b&w500/Product</title>
+    <title>b&w500/Cabinet</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -180,94 +180,20 @@
         </nav>
       </div>
 
-      <main class="main">
+ <main class="main">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <nav class="breadcrumbs">
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Cabinet</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row gy-2 items">
-            <div class="col-lg-5 col-sm-12 text-right">
-              <div class="fotorama" data-nav="thumbs">
-                <img src="img/212.970.png" alt="img/212.970.png" />
-                <img src="img/214.970.png" alt="img/214.970.png" />
-                <img src="img/white701.png" alt="img/white701.png" />
-              </div>
-            </div>
-            <div class="col-lg-7 col-sm-12">
-              <h3 class="text-left">Bowers&Wilkins 702 S2</h3>
 
-              <h5>
-                Флагманская напольная акустическая система Серии 700 оснащена
-                самыми совершенными технологиями, включая твитер с карбоновым
-                куполом Carbon Dome™ в массивном корпусе.
-              </h5>
-
-              <p>
-                Aртикул: 991852<br />
-                Тип акустической системы: Напольная<br />
-
-                Количество полос:<br />
-                3-полосная с фазоинвертором<br />
-
-                Диапазон воспроизводимых частот: 35 — 24000 Гц<br />
-
-                Сопротивление: 8 Ом<br />
-
-                Чувствительность: 90Дб<br />
-
-                Габариты: 1087 × 366 × 414 мм<br />
-
-                Выбор расцветки
-                <label class="radio option">
-                  <input
-                    class="real-radio-black"
-                    type="radio"
-                    id="black"
-                    name="cat"
-                    value="black"
-                  />
-                  <span class="custom-radio-black"></span>
-                  <span class="custom-radio-text">black</span>
-                </label>
-                <label class="radio option">
-                  <input
-                    class="real-radio-white"
-                    type="radio"
-                    id="white"
-                    name="cat"
-                    value="white"
-                  />
-                  <span class="custom-radio-white"></span>
-                  <span class="custom-radio-text">white</span>
-                </label>
-                <label class="radio option">
-                  <input
-                    class="real-radio-brown"
-                    type="radio"
-                    id="brown"
-                    name="cat"
-                    value="brown"
-                  />
-                  <span class="custom-radio-brown"></span>
-                  <span class="custom-radio-text">brown</span>
-                </label>
-              </p>
-
-              <p>Стоимость: 905 000 р</p>
-
-              <button class="card-info__btn--towishlist">Add to cart</button>
-            </div>
-          </div>
-        </div>
         <div class="row mt-3">
           <div class="col-12 container">
             <div class="product-content-details bg-white p-4">
@@ -283,7 +209,7 @@
                     aria-controls="description-tab-pane"
                     aria-selected="true"
                   >
-                    Description
+                    Регистрация
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -297,7 +223,7 @@
                     aria-controls="features-tab-pane"
                     aria-selected="false"
                   >
-                    Features
+                    Авторизация
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -311,10 +237,10 @@
                     aria-controls="reviews-tab-pane"
                     aria-selected="false"
                   >
-                    Reviews (10)
+                    Личный кабинет
                   </button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <!-- <li class="nav-item" role="presentation">
                   <button
                     class="nav-link"
                     id="video-tab"
@@ -327,7 +253,7 @@
                   >
                     Video
                   </button>
-                </li>
+                </li> -->
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div
@@ -337,26 +263,39 @@
                   aria-labelledby="description-tab"
                   tabindex="0"
                 >
-                  <p>
-                    Флагманская напольная акустическая система Серии 700
-                    оснащена самыми совершенными технологиями, включая твитер с
-                    карбоновым куполом Carbon Dome™ в массивном корпусе.
-                  </p>
-                  <p>
-                    Aртикул: 991852<br />
-                    Тип акустической системы: Напольная<br />
+                  Регистрация
+                  <form class="contacts__form">
+                    <h3 class="account-detail__title">Register</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Email
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your email"
+                    />
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
 
-                    Количество полос:<br />
-                    3-полосная с фазоинвертором<br />
+                    />
+                    </label>
+                     <label class="account__label-remember">
+                     
+                    </label>
+                    <input class="contacts__submit" type="submit" value="Register" />
 
-                    Диапазон воспроизводимых частот: 35 — 24000 Гц<br />
-
-                    Сопротивление: 8 Ом<br />
-
-                    Чувствительность: 90Дб<br />
-
-                    Габариты: 1087 × 366 × 414 мм<br />
-                  </p>
+                  </form>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -365,18 +304,48 @@
                   aria-labelledby="features-tab"
                   tabindex="0"
                 >
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <th scope="row">Colors</th>
-                        <td>white, black, pink</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Sizes</th>
-                        <td>S, M, L</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  Авторизация
+                <form class="contacts__form">
+                    <h3 class="account-detail__title">Login</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Name
+                          </span>
+
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your name"
+                    />
+
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
+
+                    />
+                    </label>
+
+                    <label class="custom-checkbox account__label-remember ">
+                          <input class="custom-checkbox__input visually-hidden" type="checkbox" />
+                          <span class="custom-checkbox__text faq__text500">
+                          Remember me
+                          </span>
+                    </label>
+
+
+
+                    <input class="contacts__submit-hollow" type="submit" value="Login" />
+                    <a class="account-detail__error">Lost you password?</a>
+                  </form>
                 </div>
 
                 <div
@@ -386,394 +355,18 @@
                   aria-labelledby="reviews-tab"
                   tabindex="0"
                 >
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-warning mb-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#reviewModal"
-                  >
-                    Write review
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="reviewModal"
-                    tabindex="-1"
-                    aria-labelledby="reviewModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="reviewModalLabel">
-                            Write review
-                          </h1>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-
-                        <form action="">
-                          <div class="modal-body">
-                            <div class="mb-3">
-                              <label
-                                for="exampleFormControlInput1"
-                                class="form-label"
-                                >Email address</label
-                              >
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="name@example.com"
-                              />
-                            </div>
-                            <div class="mb-3">
-                              <label
-                                for="exampleFormControlTextarea1"
-                                class="form-label"
-                                >Example textarea</label
-                              >
-                              <textarea
-                                class="form-control"
-                                id="exampleFormControlTextarea1"
-                                rows="3"
-                              ></textarea>
-                            </div>
-
-                            <div class="mb-3">
-                              <p>Rate the product:</p>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="rate"
-                                  id="rate1"
-                                  value="1"
-                                  required
-                                />
-                                <label class="form-check-label" for="rate1"
-                                  >1</label
-                                >
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="rate"
-                                  id="rate2"
-                                  value="2"
-                                  required
-                                />
-                                <label class="form-check-label" for="rate2"
-                                  >2</label
-                                >
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="rate"
-                                  id="rate3"
-                                  value="3"
-                                  required
-                                />
-                                <label class="form-check-label" for="rate3"
-                                  >3</label
-                                >
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="rate"
-                                  id="rate4"
-                                  value="4"
-                                  required
-                                />
-                                <label class="form-check-label" for="rate4"
-                                  >4</label
-                                >
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="rate"
-                                  id="rate5"
-                                  value="5"
-                                  required
-                                />
-                                <label class="form-check-label" for="rate5"
-                                  >5</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="submit" class="btn btn-warning">
-                              Send review
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
+                Личный кабинет
+                 
                   </div>
 
-                  <div class="card product-review mb-3">
-                    <div class="card-body">
-                      <div class="product-review-header">
-                        <h5 class="card-title">John Doe</h5>
-                        <span class="review-date">27.02.2024</span>
-                      </div>
-
-                      <div class="product-rating mb-3">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-
-                      <div class="card-text">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Itaque obcaecati laborum deleniti id consequatur
-                          possimus repellendus eius tempora corrupti. Doloribus
-                          in nisi consequatur ipsam repudiandae eaque
-                          perspiciatis quas minima provident!
-                        </p>
-                        <p>
-                          Est amet libero voluptates aspernatur quam nisi velit
-                          quaerat natus et? Vero quasi veritatis necessitatibus,
-                          nesciunt neque iste quos ut ullam laboriosam? Enim
-                          temporibus labore sequi esse non harum nam.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card product-review mb-3">
-                    <div class="card-body">
-                      <div class="product-review-header">
-                        <h5 class="card-title">John Doe</h5>
-                        <span class="review-date">27.02.2024</span>
-                      </div>
-
-                      <div class="product-rating mb-3">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-
-                      <div class="card-text">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Itaque obcaecati laborum deleniti id consequatur
-                          possimus repellendus eius tempora corrupti. Doloribus
-                          in nisi consequatur ipsam repudiandae eaque
-                          perspiciatis quas minima provident!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card product-review mb-3">
-                    <div class="card-body">
-                      <div class="product-review-header">
-                        <h5 class="card-title">John Doe</h5>
-                        <span class="review-date">27.02.2024</span>
-                      </div>
-
-                      <div class="product-rating mb-3">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                      </div>
-
-                      <div class="card-text">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Itaque obcaecati laborum deleniti id consequatur
-                          possimus repellendus eius tempora corrupti. Doloribus
-                          in nisi consequatur ipsam repudiandae eaque
-                          perspiciatis quas minima provident!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                 
                 </div>
 
-                <div
-                  class="tab-pane fade"
-                  id="video-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="video-tab"
-                  tabindex="0"
-                >
-                  <div class="ratio ratio-16x9">
-                    <!-- <video
-                      id="wistia_simple_video_55"
-                      crossorigin="anonymous"
-                      poster="https://fast.wistia.com/assets/images/blank.gif"
-                      aria-label="Video"
-                      src="blob:https://www.bowerswilkins.com/5246d873-0a57-4cca-8b8d-2d0227b041b5"
-                      controlslist="nodownload"
-                      playsinline=""
-                      loop=""
-                      preload="auto"
-                      type="video/m3u8"
-                      x-webkit-airplay="allow"
-                      style="
-                        background: transparent;
-                        display: block;
-                        height: 100%;
-                        max-height: none;
-                        max-width: none;
-                        position: static;
-                        visibility: visible;
-                        width: 100%;
-                        object-fit: contain;
-                      "
-                    ></video> -->
-                    <video src="./clothing.mp4" controls></video>
-                    <!-- <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/I10XB1-IIbA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe> -->
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <h2 class="menu__title">Наличие в магазинах</h2>
-          <div class="shop-grid">
-            <h4 class="shop-grid__title">МАГАЗИН</h4>
-            <h4 class="shop-grid__title">АДРЕС</h4>
-            <h4 class="shop-grid__title">ТЕЛЕФОН</h4>
-            <h4 class="shop-grid__title">РЕЖИМ РАБОТЫ</h4>
-            <h4 class="shop-grid__title">МОДЕЛЬ</h4>
-            <h4 class="shop-grid__title">АРТИКУЛ</h4>
-            <h4 class="shop-grid__title">КОЛ-ВО</h4>
-            <h4 class="shop-grid__title">ЗАКАЗАТЬ</h4>
-
-            <h4 class="">АУДИОМИР</h4>
-            <p class="shop-grid__col-02--address">Москва, ул. Науки 25</p>
-            <p class="shop-grid__col-03--tel">8-999-852-58-21</p>
-            <p class="shop-grid__col-04--w">
-              <span>пн-сб: 08:00-19:00</span>
-              <span>вс: 09:00-17:00</span>
-            </p>
-            <p class="shop-grid__col-05--model">BW709-45</p>
-            <p class="shop-grid__col-06--art">ASD78945</p>
-            <p class="shop-grid__col-07--q">1</p>
-            <p class="shop-grid__col-08--order">
-              <button class="card__list-btn--btn" type="submit">
-                Бронировать
-              </button>
-            </p>
-
-            <h4>ТЕХНИКА</h4>
-            <p class="shop-grid__col-02--address">Москва, ул. Науки 25</p>
-            <p class="shop-grid__col-03--tel">8-999-852-58-21</p>
-            <p class="shop-grid__col-04--w">
-              <span>пн-сб: 08:00-19:00</span>
-              <span>вс: 09:00-17:00</span>
-            </p>
-            <p class="shop-grid__col-05--model">BW709-45</p>
-            <p class="shop-grid__col-06--art">ASD78945</p>
-            <p class="shop-grid__col-07--q">1</p>
-            <p class="shop-grid__col-08--order">
-              <button class="card__list-btn--btn" type="submit">
-                Бронировать
-              </button>
-            </p>
-
-            <h4>HI END</h4>
-            <p class="shop-grid__col-02--address">Москва, ул. Науки 25</p>
-            <p class="shop-grid__col-03--tel">8-999-852-58-21</p>
-            <p class="shop-grid__col-04--w">
-              <span>пн-сб: 08:00-19:00</span>
-              <span>вс: 09:00-17:00</span>
-            </p>
-            <p class="shop-grid__col-05--model">BW709-45</p>
-            <p class="shop-grid__col-06--art">ASD78945</p>
-            <p class="shop-grid__col-07--q">1</p>
-            <p class="shop-grid__col-08--order">
-              <button class="card__list-btn--btn" type="submit">
-                Бронировать
-              </button>
-            </p>
-
-            <h4>HI FI</h4>
-            <p class="shop-grid__col-02--address">Москва, ул. Науки 25</p>
-            <p class="shop-grid__col-03--tel">8-999-852-58-21</p>
-            <p class="shop-grid__col-04--w">
-              <span>пн-сб: 08:00-19:00</span>
-              <span>вс: 09:00-17:00</span>
-            </p>
-            <p class="shop-grid__col-05--model">BW709-45</p>
-            <p class="shop-grid__col-06--art">ASD78945</p>
-            <p class="shop-grid__col-07--q">1</p>
-            <p class="shop-grid__col-08--order">
-              <button class="card__list-btn--btn" type="submit">
-                Бронировать
-              </button>
-            </p>
-
-            <h4 class="">ЭФИР</h4>
-            <p class="shop-grid__col-02--address">Москва, ул. Науки 25</p>
-            <p class="shop-grid__col-03--tel">8-999-852-58-21</p>
-            <p class="shop-grid__col-04--w">
-              <span>пн-сб: 08:00-19:00</span>
-              <span>вс: 09:00-17:00</span>
-            </p>
-            <p class="shop-grid__col-05--model">BW709-45</p>
-            <p class="shop-grid__col-06--art">ASD78945</p>
-            <p class="shop-grid__col-07--q">1</p>
-            <p class="shop-grid__col-08--order">
-              <button class="card__list-btn--btn" type="submit">
-                Бронировать
-              </button>
-            </p>
-          </div>
-        </div>
-        <section class="stores" id="stores">
-          <div class="container">
-            <h3 class="menu__title">Посмотреть на карте</h3>
-          </div>
-          <section class="container-fluid socialmap">
-            <div id="map" class="text-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.822174089799!2d37.61030017050038!3d55.757739672412825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a454f72f4ff%3A0x923352d5be7df67b!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2sua!4v1596189839076!5m2!1sru!2sua"
-                width="100%"
-                height="400"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              >
-              </iframe>
-            </div>
-          </section>
-        </section>
       </main>
       <footer class="footer">
         <div class="container">
