@@ -1837,6 +1837,10 @@ label.required::before {
       margin-bottom: 10px;
 
 }
+.account__label {
+    display: block;
+    width: 100%;
+}
 		// .contact__submit-hollow
 
 .contacts__submit-hollow {
