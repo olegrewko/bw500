@@ -1342,7 +1342,7 @@ label.required::before {
     color: darkslategray;
 }
 .section-title {
-    margin-top: 0px;
+    margin-top: 100px;
 }
 .minicart:hover {
     color: orange;
