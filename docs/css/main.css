@@ -345,7 +345,7 @@ background: tomato;
  margin: 5px;
  padding: 5px;
  margin: 0 auto;
- margin-bottom: 100px;
+ margin-bottom: 0px;
  display: flex;
  justify-content: center;
  align-items: flex-start;
